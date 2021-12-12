@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/parentLayoutCreator">
+
+
+            <RelativeLayout
+                android:id="@+id/creatorListLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3af2d7"
+                android:layout_margin="20dp"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/creatorPicture"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/person_username"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:id="@+id/creatorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tony Krugar"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginRight="85dp"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:layout_below="@+id/creatorPicture"/>
+
+                <ImageView
+                    android:id="@+id/creatorLocation"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/location_icon"
+                    android:padding="7dp"
+                    android:layout_below="@+id/creatorName"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="75dp"/>
+
+                <TextView
+                    android:id="@+id/creatorLocationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jakarta, Indonesia"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_below="@+id/creatorName"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginRight="85dp"
+                    android:padding="7dp"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

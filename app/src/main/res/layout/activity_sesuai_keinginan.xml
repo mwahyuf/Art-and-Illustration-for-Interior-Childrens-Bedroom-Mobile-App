@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SesuaiKeinginanActivity"
+    android:background="@drawable/background_anak">
+
+    <RelativeLayout
+        android:id="@+id/sesuaiKeinginanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3af2d7">
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_profilcreator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Sesuai Keinginan Pelanggan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sesuaiKeinginan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sesuaiKeinginanLayout">
+
+            <TextView
+                android:id="@+id/masukkanreferensi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Masukkan Referensi Anda"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/sesuaiKeinginanLine"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/masukkanreferensi_text"
+                android:layout_marginTop="2dp"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/konfirmasiSesuaiKeinginan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/masukkanreferensi_text"
+                android:padding="7dp"
+                android:text="Konfirmasi" />
+
+            <RelativeLayout
+                android:id="@+id/imageSesuaiKeinginanLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/sesuaiKeinginanLine"
+                android:layout_marginTop="35dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imageSesuaiKeinginan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_icon"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/dragDropText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drag dan Drop"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/imageSesuaiKeinginan"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginBottom="25dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/masukkanTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/imageSesuaiKeinginanLayout"
+                android:background="@color/white"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="jenis_artwork">
+        <item>Cartoon</item>
+        <item>Fantasy</item>
+        <item>Super Hero</item>
+    </string-array>
+
+    <string-array name="ukuran_frame">
+        <item>A3 (29.7 x 42 cm)</item>
+        <item>A3+ (32 x 48 cm)</item>
+        <item>A2 (42 x 59.4 cm)</item>
+        <item>B2 (42 x 59.4 cm)</item>
+        <item>A1 (59.4 x 84 cm)</item>
+    </string-array>
+    
+
+</resources>

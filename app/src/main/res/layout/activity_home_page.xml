@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_anak"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/centerverticaline"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/notifications"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/centerverticaline"
+        android:src="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/centerverticaline"
+        android:src="@drawable/message" />
+
+    <ImageView
+        android:id="@+id/profile_tap"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@id/cardlayout"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/centerverticaline"
+        android:background="@drawable/profile_photo"
+        android:src="@drawable/ic_baseline_person_24"
+        app:tint="@color/black" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerhorizontaline" />
+
+    <RelativeLayout
+        android:id="@+id/centerverticaline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/cardlayout"
+        android:layout_width="340dp"
+        android:layout_height="240dp"
+        android:layout_above="@id/centerhorizontaline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/cardbackground">
+
+        <RelativeLayout
+            android:id="@+id/centerhorizontaline_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_card"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/saldo_anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Saldo Anda : Rp 800000"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/galeri_seni"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/saldo_anda"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_toStartOf="@id/centerverticaline_card"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/galeri_tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_galeri"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/palette_icon"></ImageView>
+
+
+            <TextView
+                android:id="@+id/text_galeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Galeri Seni"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/creator"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/saldo_anda"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/centerverticaline_card"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/creator_tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_creator"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/creator_icon"></ImageView>
+
+            <TextView
+                android:id="@+id/text_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Creator"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/riwayat_pesanan"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/galeri_seni"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_toStartOf="@id/centerverticaline_card"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/riwayat_pesanan_tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:src="@drawable/history_order"></ImageView>
+
+            <TextView
+                android:id="@+id/text_historyorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="Riwayat Pesanan"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/isi_ulang"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/creator"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/centerverticaline_card"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/topup_tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="12dp"
+                android:src="@drawable/top_up"></ImageView>
+
+            <TextView
+                android:id="@+id/text_topup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="Isi Ulang"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topart_layout"
+        android:layout_width="340dp"
+        android:layout_height="135dp"
+        android:layout_below="@id/cardlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/cardbackground">
+
+        <RelativeLayout
+            android:id="@+id/centerhorizontaline_topart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_topart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/top_art_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/centerverticaline_topart"
+            android:text="TOP ART"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/top_art_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/centerverticaline_topart"
+            android:text=">>"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/phantasy1_art"
+            android:layout_width="139dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/top_art_font"
+            android:layout_alignEnd="@+id/centerverticaline_topart"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/phantasy_1" />
+
+        <ImageView
+            android:id="@+id/phantasy2_art"
+            android:layout_width="87dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/top_art_font"
+            android:layout_alignEnd="@+id/centerverticaline_topart"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/phantasy_2" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

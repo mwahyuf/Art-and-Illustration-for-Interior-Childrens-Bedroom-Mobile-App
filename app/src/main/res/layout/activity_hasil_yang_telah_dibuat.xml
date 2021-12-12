@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilYangTelahDibuatActivity"
+    android:background="@drawable/background_anak">
+
+    <RelativeLayout
+        android:id="@+id/hasilDibuatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3af2d7">
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_profilcreator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Hasil yang telah dibuat oleh creator"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollHasilDibuat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hasilDibuatLayout">
+
+        <RelativeLayout
+            android:id="@+id/pilihHasil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pilihasil_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Pilih Hasil"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/pilihHasilLine"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/pilihasil_text"
+                android:layout_marginTop="2dp"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/konfirmasiHasilDibuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/pilihasil_text"
+                android:padding="7dp"
+                android:text="Konfirmasi" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pilihHasilLine"
+                android:rowCount="9"
+                android:columnCount="2"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_1" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_2"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_3"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/super_hero_idol"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/supremacy"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/titan"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/the_flash"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_1"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_2"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_3"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/sunset"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/marvel"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/spongebob"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/yoda"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/star_wars"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/squidward"/>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

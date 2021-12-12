@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilCreatorDefaultActivity"
+    android:scrollbars="vertical"
+    android:background="@drawable/background_anak">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3af2d7">
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_detailgaleri_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Profil Creator"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/creatorLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/imageDefaultCreator"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="7dp"
+                android:src="@drawable/person_username" />
+
+            <TextView
+                android:id="@+id/creatorNameDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/imageDefaultCreator"
+                android:text="Nama Creator :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/creatorLocationIconDefault"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_toEndOf="@+id/imageDefaultCreator"
+                android:padding="4dp"
+                android:src="@drawable/location_icon" />
+
+            <TextView
+                android:id="@+id/creatorLocationDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="65dp"
+                android:layout_toEndOf="@+id/imageDefaultCreator"
+                android:text="Lokasi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/creatorSinceDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:layout_toEndOf="@+id/imageDefaultCreator"
+                android:text="Sejak :"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/chatBtnCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/imageDefaultCreator"
+                android:padding="10dp"
+                android:text="Chat" />
+
+            <Button
+                android:id="@+id/hireBtnCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/chatBtnCreator"
+                android:padding="10dp"
+                android:text="Hire" />
+
+            <View
+                android:id="@+id/profileLine"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/hireBtnCreator"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:id="@+id/textKoleksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_below="@+id/profileLine"
+                android:padding="12dp"
+                android:text="Koleksi"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@color/purple_200"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textKoleksi"
+                android:rowCount="9"
+                android:columnCount="2"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_1" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_2"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/phantasy_3"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/super_hero_idol"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/supremacy"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/titan"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/the_flash"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_1"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_2"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/cartoon_3"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/sunset"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/marvel"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/spongebob"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/yoda"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/star_wars"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/squidward"/>
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    
+    
+</RelativeLayout>

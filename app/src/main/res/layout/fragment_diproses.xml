@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiprosesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/contentProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3af2d7"
+        android:layout_marginTop="75dp">
+
+        <ImageView
+            android:id="@+id/creatorFotoProses"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/person_username" />
+
+        <TextView
+            android:id="@+id/creatorNameProses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eren Fadli"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/creatorFotoProses"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/sedangDikerjakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/creatorNameProses"
+            android:text="Sedang dikerjakan"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garisProses"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/creatorFotoProses"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/artworkProses"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:src="@drawable/supremacy"
+            android:layout_below="@+id/garisProses"/>
+
+        <TextView
+            android:id="@+id/titleProses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Patriot"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:layout_toEndOf="@+id/artworkProses"
+            android:layout_below="@+id/garisProses"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/genreProses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre : Fantasy"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_toEndOf="@+id/artworkProses"
+            android:layout_below="@+id/titleProses"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genreProses"
+            android:layout_marginLeft="109dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/genreProses"
+            android:text="x1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/genreProses"
+            android:text="Rp 135.000"
+            android:textColor="@color/black"
+            android:layout_below="@+id/genreProses"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genreProses"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/artworkProses"
+            android:padding="7dp"
+            android:text="Total : Rp 135.000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/chatProses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHAT CREATOR"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="12dp"
+            android:padding="15dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

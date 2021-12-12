@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    tools:context=".GaleriDefaultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/cardbackground">
+
+        <RelativeLayout
+            android:id="@+id/centerverticaline_detailgaleri_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:text="DETAIL POSTINGAN"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_default"
+            android:layout_width="400dp"
+            android:layout_height="240dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/title_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="265dp"
+            android:text="Judul :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/created_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="295dp"
+            android:text="Dibuat Oleh :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genre_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="318dp"
+            android:text="Genre :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tanggal_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="270dp"
+            android:text="Tanggal :"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/creatorprofile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genre_default"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Pergi ke profil creator" />
+
+        <View
+            android:id="@+id/divider_default_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/creatorprofile_btn"
+            android:layout_margin="20dp"
+            android:background="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/like_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="440dp"
+            android:backgroundTint="@color/white"
+            android:padding="2dp"
+            android:src="@drawable/favorite_border" />
+
+        <ImageView
+            android:id="@+id/comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="440dp"
+            android:layout_toEndOf="@+id/like_btn"
+            android:backgroundTint="@color/white"
+            android:padding="2dp"
+            android:src="@drawable/comment_talk" />
+
+        <View
+            android:id="@+id/divider_default_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/like_btn"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_default_2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Komentar"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider_default_3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/comment_text"
+            android:background="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="330dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

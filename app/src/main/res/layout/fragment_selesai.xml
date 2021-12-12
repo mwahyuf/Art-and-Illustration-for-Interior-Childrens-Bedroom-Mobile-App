@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelesaiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/contentProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3af2d7"
+        android:layout_marginTop="75dp">
+
+        <ImageView
+            android:id="@+id/creatorFotoSelesai"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/person_username" />
+
+        <TextView
+            android:id="@+id/creatorNameSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/creatorFotoSelesai"
+            android:text="Carla"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/creatorNameSelesai"
+            android:text="Selesai"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garisSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/creatorFotoSelesai"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/artworkSelesai"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/garisSelesai"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="5dp"
+            android:src="@drawable/sunset" />
+
+        <TextView
+            android:id="@+id/titleSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garisSelesai"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/artworkSelesai"
+            android:text="Cost of Freedom"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genreSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre : Fantasy"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_toEndOf="@+id/artworkSelesai"
+            android:layout_below="@+id/titleSelesai"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genreSelesai"
+            android:layout_marginLeft="109dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/genreSelesai"
+            android:text="x1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genreSelesai"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/genreSelesai"
+            android:text="Rp 70.000"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genreSelesai"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/artworkSelesai"
+            android:padding="12dp"
+            android:text="Total : Rp 70.000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/pesan_lagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan Lagi"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
